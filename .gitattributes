@@ -1,0 +1,26 @@
+# Treat Dart as the primary language
+*.dart linguist-language=Dart
+
+# Mark specific files and folders as vendored
+*.cpp linguist-vendored
+*.h linguist-vendored
+*.m linguist-vendored
+*.mm linguist-vendored
+*.c linguist-vendored
+*.swift linguist-vendored
+*.cmake linguist-vendored
+*.kt linguist-vendored
+*.kotlin linguist-vendored
+*.gradle linguist-vendored
+*.xml linguist-vendored
+*.html linguist-vendored
+
+# Exclude platform-specific directories and their contents
+ios/** linguist-vendored
+android/** linguist-vendored
+linux/** linguist-vendored
+build/** linguist-vendored
+
+# Explicitly exclude all CMake files
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
